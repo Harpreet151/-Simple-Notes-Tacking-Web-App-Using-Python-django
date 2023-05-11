@@ -58,6 +58,31 @@ For Windows :
 Username : `admin`
 
 Password : `admin`
+## Screenshots
+User Login
+
+![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/1.png)
+User Register
+
+![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/2.png)
+Added Notes
+
+![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/3.png)
+
+Edit Your Notes
+
+![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/4.png)
+
+Delete Your Notes
+
+![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/5.png)
+
+
+Admin Panel
+
+![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/6.png)
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at contact@harpreetsinghbasnal.com.
