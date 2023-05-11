@@ -62,9 +62,11 @@ Password : `admin`
 User Login
 
 ![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/1.png)
+
 User Register
 
 ![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/2.png)
+
 Added Notes
 
 ![App Screenshot](https://raw.githubusercontent.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django/master/Result/3.png)
