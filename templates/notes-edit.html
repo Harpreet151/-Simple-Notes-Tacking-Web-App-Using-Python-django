@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% block body %}
+
+    <div class="container my-4">
+      <h2>Edit Note :</h2>
+    
+    </div>
+    
+    <div class="container my-3">
+    <div class="card">
+        <div class="card-body">
+          <form action="/update/{{notesedit.nid}}" method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <h5>Note title</h5>
+                <input type="text" class="form-control" id="notetitle"  name="title" value="{{ notesedit.title }}" required >
+              </div>
+          <h5 class="card-title">Type Your Note Description</h5>
+          <textarea class="form-control my-3" aria-label="With textarea" id="notetxt" name="description" required>{{ notesedit.description }}</textarea>
+          <button class="btn btn-primary" id="addnote" type="submit">Update</button>
+        </form>
+          </div>
+        </div>
+      </div>
+{% endblock %}
+
+
+      

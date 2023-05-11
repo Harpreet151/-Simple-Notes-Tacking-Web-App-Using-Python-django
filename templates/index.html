@@ -1,0 +1,81 @@
+{% extends 'base/base.html' %}
+{% block body %}
+
+
+
+  <div class="container my-4">
+    {% for message in messages %}
+    {% if "noteadd" in message.tags %}
+    <div class="alert alert-success alert-dismissible">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      {{message}}
+    </div>
+    {% endif %}
+    {% endfor %}
+    <h2>Add Notes :</h2>
+
+  </div>
+
+  <div class="container my-3">
+    <div class="card">
+      <div class="card-body">
+        <form action="/" method="POST">
+          {% csrf_token %}
+          <div class="mb-3">
+            <h5>Note title</h5>
+            <input type="text" class="form-control" id="title" placeholder="Note title" name="title" required>
+          </div>
+          <h5 class="card-title">Type Your Note Description</h5>
+          <textarea class="form-control my-3" aria-label="With textarea" id="description" name="description"
+            required></textarea>
+          <button class="btn btn-primary" id="addnote">Add Note</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr style="opacity: 15.25;">
+
+
+
+  <div class="container my-4">
+    {% for message in messages %}
+    {% if "notedelete" in message.tags %}
+    <div class="alert alert-danger alert-dismissible">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      {{message}}
+    </div>
+    {% elif "noteupdate" in message.tags %}
+    <div class="alert alert-success alert-dismissible">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      {{message}}
+    </div>
+    {% endif %}
+    {% endfor %}
+    <h4> Your Notes :</h4>
+    <div id="note" class="row">
+      {% for i in mynotes %}
+      
+      
+
+      <div class="card cardval my-3 mx-3" style="width: 18rem;">
+        <div class="card-body">
+          <p style="font-size: 13px">{{i.updated_at}}</p>
+          <h5 class="card-title">{{i.title}}</h5>
+          <p class="card-text"><b>{{i.description}}</p></b>
+          <button type="button" class="btn btn-success">
+            <a href="{% url 'NotesEdit' i.nid %}" style="color:white;text-decoration: none;">Edit
+              Note</a>
+
+          </button>
+          <button type="button" class="btn btn-danger">
+            <a href="{% url 'delete' i.nid %}" style="color: white;text-decoration: none;">Delete
+              Note</a>
+          </button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+ 
+
+{% endblock %}
