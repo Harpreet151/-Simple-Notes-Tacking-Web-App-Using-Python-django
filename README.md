@@ -22,7 +22,7 @@ Overall, "Keep Notes" provides a practical and efficient way for users to manage
 
 Clone this repository:
 ```bash
-  git clone https://github.com/OmkarPathak/A-Simple-Note-Taking-Web-App.git
+  git clone https://github.com/OmkarPathak/A-Simple-Note-Taking-Web-App.git](https://github.com/Harpreet151/Simple-Notes-Tacking-Web-App-Using-Python-django.git
 ```
 
 Install the dependencies by simply executing:
